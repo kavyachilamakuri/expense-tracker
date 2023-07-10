@@ -4,6 +4,7 @@ import { GlobalContext } from '../context/GlobalContext';
 export const AddTransaction = () => {
     const[text,setText]=useState('');
     const[amount,setAmount]=useState(0);
+    // eslint-disable-next-line
     const {addTransaction,transactions}=useContext(GlobalContext);
     const handleSubmit=e=>{
       e.preventDefault();
